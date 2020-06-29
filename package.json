@@ -1,0 +1,17 @@
+{
+  "name": "crewdev_page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bundle.js",
+  "scripts": {
+    "compiler": "babel src/jsx -d src/js",
+    "bundler": "npx webpack",
+    "build": "npm run compiler && npm run bundler"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "insertion": "^0.2.3"
+  }
+}
