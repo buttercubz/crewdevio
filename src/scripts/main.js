@@ -22,3 +22,5 @@ let slideLeft = {
 };
 
 ScrollReveal().reveal(".welcome-info", slideLeft);
+
+console.log("HELLO WOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOORLD");

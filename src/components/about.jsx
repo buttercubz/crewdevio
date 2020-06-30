@@ -2,6 +2,8 @@
 
 import insertionJsx from "insertion";
 
+import Programming_rafiki from '../images/Programming-rafiki.svg';
+
 function About() {
   return (
     <section>
@@ -15,7 +17,7 @@ function About() {
           deleniti temporibus voluptates aut sunt omnis recusandae suscipit
           nobis ratione mollitia, iusto, similique quas doloremque. Iste, natus?
         </p>
-        <img src="./images/Programming-rafiki.svg" />
+        <img src={Programming_rafiki} />
       </div>
     </section>
   );

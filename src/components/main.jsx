@@ -1,19 +1,13 @@
 /* @jsx insertionJsx */
 
-import {
-  Fragment,
-  mount,
-  render,
-  createElement,
-  insertionJsx,
-} from "insertion";
+import { Fragment, insertionJsx } from "insertion";
 
 import { Router, Route, Switch, Link, Redirect } from "insertion/router";
 
-import Navigation from "./navigation.js";
-import ShowCase from "./showcase.js";
-import Project from "./projects.js";
-import About from "./about.js";
+import Navigation from "./navigation.jsx";
+import ShowCase from "./showcase.jsx";
+import Project from "./projects.jsx";
+import About from "./about.jsx";
 
 function App() {
   return (
@@ -38,8 +32,4 @@ function App() {
   );
 }
 
-const app = createElement(<App />);
-
-const element = render(app);
-
-mount(element);
+export default App;

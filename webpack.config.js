@@ -1,10 +1,46 @@
+// const path = require("path");
+
+// module.exports = {
+//   entry: "./src/js/main.js",
+//   mode: true ? "production" : "development",
+//   output: {
+//     path: path.join(__dirname, "/public"),
+//     filename: "bundle.js",
+//   },
+// };
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
+const htmlPlugin = new HtmlWebpackPlugin({
+  template: "./src/index.html",
+  filename: "./index.html",
+});
 
 module.exports = {
-  entry: "./src/js/main.js",
-  mode: true ? "production" : "development",
+  entry: "./src",
   output: {
-    path: path.join(__dirname, "/public"),
+    path: path.resolve(__dirname, "public"),
     filename: "bundle.js",
   },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ["babel-loader"],
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ["file-loader"],
+      },
+    ],
+  },
+  resolve: {
+    extensions: ["*", ".js", ".jsx"],
+  },
+  plugins: [htmlPlugin],
 };
