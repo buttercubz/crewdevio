@@ -2,7 +2,7 @@
 
 import insertionJsx from "insertion";
 
-import logo from "../images/logo.png";
+import logo from "../images/crewdev_logo.png";
 
 function ShowCase() {
   return (
@@ -15,8 +15,8 @@ function ShowCase() {
         <div class="welcome-message">
           <img class="logo" src={logo} alt="CrewDev logo" />
           <p>
-            <span class="color-red font-size-double">
-              open source first, better world
+            <span class="color-gray font-size-double">
+              Open source first, Better world
             </span>
           </p>
         </div>

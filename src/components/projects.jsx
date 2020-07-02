@@ -2,8 +2,8 @@
 
 import insertionJsx from "insertion";
 
-import trexLogo from '../images/trex_logo.png';
-import importqlLogo from '../images/importql_logo.png';
+import trexLogo from "../images/trex_logo.png";
+import importqlLogo from "../images/importql_logo.png";
 
 const projectList = [
   {
@@ -25,16 +25,16 @@ function Projects() {
   return (
     <section>
       <h1 class="projects-title">
-        Our <span class="color-red">Projects</span>
+        Our <span class="color-blue">Projects</span>
       </h1>
       <div class="projects-container">
-        {projectList.map(({ description, imgPath, name, url }) => {
+        {projectList.map(({ description, imgPath, name, url }, index) => {
           return (
             <div class="project-card">
-              <img src={imgPath} class="project-logo" />
+              <img src={imgPath} class="project-logo" alt={index} />
               <h3 class="project-name">{name}</h3>
               <p class="project-desc">{description}</p>
-              <a href={url} class="project-link">
+              <a href={url} class="project-link" target="blank">
                 visited out github repo
               </a>
             </div>

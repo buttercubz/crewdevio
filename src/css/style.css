@@ -1,3 +1,10 @@
+:root {
+  --white-main-color: #f3f3f3;
+  --blue-main-color: #00a8f3;
+  --yellow-main-color: #ffca18;
+  --gray-main-color: #585858;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +22,10 @@ a:hover {
   color: #e66666;
 }
 
+a {
+  text-decoration: none;
+}
+
 section {
   min-height: calc(100vh - 100px);
   width: 100%;
@@ -23,7 +34,19 @@ section {
 }
 
 .color-red {
-  color: #e66666;
+  color: var(--yellow-main-color);
+}
+
+.color-gray {
+  color: var(--gray-main-color);
+}
+
+.color-blue {
+  color: var(--blue-main-color);
+}
+
+.color-yellow {
+  color: var(--yellow-main-color);
 }
 
 .font-size-double {
@@ -58,12 +81,7 @@ section {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  background: rgb(3, 169, 244);
-  background: linear-gradient(
-    90deg,
-    rgba(3, 169, 244, 1) 18%,
-    rgba(199, 218, 227, 0.9472163865546218) 51%
-  );
+  background: #585858;
   top: 0;
   left: 0;
 }
@@ -81,7 +99,7 @@ section {
 
 .nav-main #menu-icon {
   font-size: 2.5em;
-  color: #e66666;
+  color: #00a8f3;
   position: absolute;
   top: 5px;
   right: 20px;
@@ -100,17 +118,17 @@ section {
 
 .nav-main .nav-menu li {
   list-style: none;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .nav-main .nav-menu li a {
-  color: #676767;
+  color: var(--white-main-color);
   text-decoration: none;
   padding: 0.5rem;
 }
 
 .nav-main .nav-menu li a:hover {
-  color: #e66666;
+  color: var(--blue-main-color);
 }
 
 /* Showcase */
@@ -124,6 +142,7 @@ section {
 
 .showcase .title {
   font-size: 50px;
+  color: var(--blue-main-color);
 }
 
 .showcase .welcome-message {
@@ -135,6 +154,7 @@ section {
   margin-top: 5vh;
   width: 200px;
   height: 200px;
+  border-radius: 10%;
 }
 
 .showcase .welcome-message p {
@@ -150,7 +170,7 @@ hr.divider-right {
   height: 15px;
   margin-top: auto;
   margin-bottom: 20px;
-  background-color: #e66666;
+  background-color: #00a8f3;
   animation-name: drawRightLine;
   animation-duration: 1s;
   animation-iteration-count: initial;
