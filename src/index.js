@@ -8,3 +8,7 @@ const app = createElement(insertionJsx(App, null));
 const element = render(app);
 
 mount(element, "#root");
+
+DidMount(() => {
+  script();
+});
