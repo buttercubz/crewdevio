@@ -4,7 +4,7 @@ import insertionJsx from "insertion";
 
 import { Link } from "insertion/router";
 
-import logo from '../images/logo.png';
+import logo from "../images/logo.png";
 
 function Navigation() {
   return (
@@ -15,7 +15,9 @@ function Navigation() {
           Crew <span className="color-red"> Dev</span>
         </h1>
       </div>
-      <ul className="nav-menu">
+      <span id="menu-icon">&#9776;</span>
+      <div className="nav-menu">
+      <ul >
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -26,6 +28,7 @@ function Navigation() {
           <Link to="/about">About Us</Link>
         </li>
       </ul>
+      </div>
     </nav>
   );
 }

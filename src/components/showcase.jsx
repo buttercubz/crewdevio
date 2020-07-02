@@ -2,15 +2,15 @@
 
 import insertionJsx from "insertion";
 
-import logo from '../images/logo.png'
+import logo from "../images/logo.png";
 
 function ShowCase() {
   return (
-    <section>
-      <div class="showcase">
+    <section class="showcase">
+
         <h1 class="title">
           Crew
-           <span class="color-red"> Dev</span>
+          <span class="color-red"> Dev</span>
         </h1>
         <div class="welcome-message">
           <img class="logo" src={logo} alt="CrewDev logo" />
@@ -21,7 +21,6 @@ function ShowCase() {
           </p>
         </div>
         <hr class="divider-right" />
-      </div>
     </section>
   );
 }
