@@ -22,7 +22,7 @@ function Navigation() {
             <Link to="/projects">Projects</Link>
           </li>
           <li>
-            <Link to="/about">About Us</Link>
+            <Link to="/team">Our Team</Link>
           </li>
         </ul>
       </div>

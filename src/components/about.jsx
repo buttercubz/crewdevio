@@ -12,10 +12,10 @@ function About() {
       </h1>
       <div class="about">
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
-          porro, voluptas tenetur <span class="color-yellow">commodi</span>{" "}
-          deleniti temporibus voluptates aut sunt omnis recusandae suscipit
-          nobis ratione mollitia, iusto, similique quas doloremque. Iste, natus?
+          We are a team of software developers from the{" "}
+          <span class="color-yellow"> Dominican Republic </span> and we create
+          different solutions for the node js and deno ecosystem,
+          we create solutions for both frontend and backend.
         </p>
         <img src={Programming_rafiki} alt="img" />
       </div>
