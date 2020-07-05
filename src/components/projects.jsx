@@ -1,6 +1,4 @@
-/* @jsx insertionJsx */
-
-import insertionJsx from "insertion";
+import React from "react";
 
 import trexLogo from "../images/trex_logo.png";
 import importqlLogo from "../images/importql_logo.png";
@@ -24,17 +22,17 @@ const projectList = [
 function Projects() {
   return (
     <section>
-      <h1 class="projects-title">
-        Our <span class="color-blue">Projects</span>
+      <h1 className="projects-title">
+        Our <span className="color-blue">Projects</span>
       </h1>
-      <div class="projects-container">
+      <div className="projects-container">
         {projectList.map(({ description, imgPath, name, url }, index) => {
           return (
-            <div class="project-card">
-              <img src={imgPath} class="project-logo" alt={index} />
-              <h3 class="project-name">{name}</h3>
-              <p class="project-desc">{description}</p>
-              <a href={url} class="project-link" target="blank">
+            <div className="project-card" key={index}>
+              <img src={imgPath} className="project-logo" alt={index} />
+              <h3 className="project-name">{name}</h3>
+              <p className="project-desc">{description}</p>
+              <a href={url} className="project-link" target="blank">
                 visited out github repo
               </a>
             </div>

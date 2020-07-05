@@ -1,26 +1,24 @@
-/* @jsx insertionJsx */
-
-import insertionJsx from "insertion";
+import React from "react";
 
 import logo from "../images/crewdev_logo.png";
 
 function ShowCase() {
   return (
-    <section class="showcase">
+    <section className="showcase">
 
-        <h1 class="title">
+        <h1 className="title">
           Crew
-          <span class="color-red"> Dev</span>
+          <span className="color-red"> Dev</span>
         </h1>
-        <div class="welcome-message">
-          <img class="logo" src={logo} alt="CrewDev logo" />
+        <div className="welcome-message">
+          <img className="logo" src={logo} alt="CrewDev logo" />
           <p>
-            <span class="color-gray font-size-double">
+            <span className="color-gray font-size-double">
               Open source first, Better world
             </span>
           </p>
         </div>
-        <hr class="divider-right" />
+        <hr className="divider-right" />
     </section>
   );
 }
