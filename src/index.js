@@ -1,15 +1,8 @@
-import { mount, render, createElement, DidMount, insertionJsx } from "insertion";
+import React from "react"
+import ReactDOM from "react-dom"
 
 import "./css/style.css";
-import App from "./components/main";
+import App from "./components/App";
 import script from './scripts/main'
 
-const app = createElement(insertionJsx(App, null));
-
-const element = render(app);
-
-mount(element, "#root");
-
-DidMount(() => {
-  script();
-});
+ReactDOM.render(<App/>, document.querySelector('#root'))
