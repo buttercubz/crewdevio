@@ -28,6 +28,10 @@ a {
   text-decoration: none;
 }
 
+.loading {
+  margin-top: 300px;
+}
+
 section {
   min-height: calc(100vh - 100px);
   width: 100%;
@@ -282,7 +286,6 @@ hr.divider-right {
   font-size: 300%;
 }
 
-
 .team-container {
   width: 100%;
   display: flex;
@@ -325,7 +328,6 @@ hr.divider-right {
 
 .member-card .email {
   margin: auto 0 20px;
-
 }
 
 .member-card .social-medias {
@@ -333,7 +335,6 @@ hr.divider-right {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .member-card .social-medias a {
@@ -570,4 +571,11 @@ figcaption span {
     padding-left: 5vh;
     font-size: 2.5em;
   }
+}
+.wmde-markdown {
+  margin-top: 90px;
+}
+
+h3 {
+  text-align: left;
 }
