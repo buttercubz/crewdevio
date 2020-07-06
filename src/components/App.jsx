@@ -2,11 +2,11 @@ import React, { Fragment } from "react";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Navigation from "./Navigation";
-import ShowCase from "./Showcase";
-import Project from "./Projects";
+import Navigation from "./navigation";
+import ShowCase from "./showcase";
+import Project from "./projects";
 import Notfound from "./Notfound";
-import About from "./About";
+import About from "./about";
 import Team from "./Team";
 
 function App() {
