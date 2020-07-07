@@ -5,6 +5,7 @@ function Markdown({ match }) {
   const [markdown, setMarkdown] = useState(null);
 
   useEffect(() => {
+    console.log("Here we are");
     fetch(
       `https://raw.githubusercontent.com/crewdevio/${match.params.repo}/master/README.md`
     )
