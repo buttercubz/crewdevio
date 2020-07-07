@@ -9,31 +9,25 @@ import Project from "./projects";
 import About from "./about";
 import Team from "./Team";
 
+const HomePage = () => (
+  <div className="container">
+    <ShowCase />
+    <Project two={true} title="two of our" />
+    <About />
+  </div>
+);
+
 function App() {
   return (
     <Fragment>
       <Router>
         <Navigation />
         <Switch>
-          <Route path="/team">
-            <Team />
-          </Route>
-
+          <Route path="/team" component={Team} />
           <Route path="/projects/:repo" component={Markdown} />
-
-          <Route path="/projects">
-            <Project />
-          </Route>
-          <Route exact path="/">
-            <div className="container">
-              <ShowCase />
-              <Project two={true} title="two of our" />
-              <About />
-            </div>
-          </Route>
-          <Route path="*">
-            <Notfound />
-          </Route>
+          <Route  path="/projects" component={Project} />
+          <Route exact path="/" component={HomePage} />
+          <Route path="*" component={Notfound} />
         </Switch>
       </Router>
     </Fragment>
