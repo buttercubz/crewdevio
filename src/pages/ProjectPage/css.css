@@ -1,4 +1,5 @@
 .container-project {
+  margin-top: 90px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -6,7 +7,6 @@
 }
 
 .wmde-markdown {
-  margin-top: 90px;
   width: 90%;
   margin: 0 auto;
 }
