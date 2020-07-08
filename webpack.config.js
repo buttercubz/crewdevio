@@ -32,6 +32,13 @@ module.exports = {
   },
   resolve: {
     extensions: ["*", ".js", ".jsx"],
+    alias: {
+      'Components': path.resolve(__dirname, 'src/components/'),
+      'Pages': path.resolve(__dirname, 'src/pages/'),
+      'Utilities': path.resolve(__dirname, 'src/utilities/'),
+      'StaticData': path.resolve(__dirname, 'src/staticData'),
+      'Images': path.resolve(__dirname,'src/images')
+    }
   },
   plugins: [htmlPlugin],
   devServer: {
