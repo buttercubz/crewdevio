@@ -1,6 +1,7 @@
 import React from "react";
 
-import Programming_rafiki from "../images/Programming-rafiki.svg";
+import Programming_rafiki from "Images/Programming-rafiki.svg";
+import "./css.css";
 
 function About() {
   return (
