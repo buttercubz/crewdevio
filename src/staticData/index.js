@@ -1,10 +1,26 @@
-import React, { Fragment } from "react";
+import trexLogo from "Images/trex_logo.png";
+import importqlLogo from "Images/importql_logo.png";
+import erickPhoto from "Images/erick.jpg";
+import rivierPhoto from "Images/rivier.jpg";
+import estebanPhoto from "Images/esteban.jpg";
 
-import erickPhoto from "../images/erick.jpg";
-import rivierPhoto from "../images/rivier.jpg";
-import estebanPhoto from "../images/esteban.jpg";
+export const projectList = [
+  {
+    name: "Trex",
+    description:
+      "is a Package management for deno similar to npm but maintaining the deno philosophy.",
+    url: "https://github.com/crewdevio/Trex",
+    imgPath: trexLogo,
+  },
+  {
+    name: "Importql",
+    description: "easy way to import and parse graphql files in deno.",
+    url: "https://github.com/crewdevio/importql",
+    imgPath: importqlLogo,
+  },
+];
 
-const members = [
+export const membersList = [
   {
     name: "Erick Sosa Garcia",
     desc:
@@ -48,40 +64,3 @@ const members = [
     },
   },
 ];
-
-function Team() {
-  return (
-    <Fragment>
-      <h1 className="team-title"><span className="color-blue">Our</span> Team</h1>
-      <div className="team-container">
-        {members.map(({ name, desc, email, photo, work, social }, index) => (
-          <div className="member-card" key={index}>
-            <h1 className="name">
-              <span className="color-blue">{name}</span>
-            </h1>
-            <img src={photo} alt="Profile Photo" className="profile-picture" />
-            <h3 className="work">
-              Work: <span className="color-yellow">{work}</span>
-            </h3>
-            <p className="desc">{desc}</p>
-            <a className="email">{email}</a>
-            <div className="social-medias">
-              {Object.keys(social).map((mediaName, index) => (
-                <a
-                  href={social[mediaName]}
-                  title={mediaName}
-                  style={{"color":"#000"}}
-                  key={index}
-                >
-                  <i className={`fa fa-${mediaName}`} style={{"fontSize":"24px"}}></i>
-                </a>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
-    </Fragment>
-  );
-}
-
-export default Team;

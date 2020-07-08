@@ -1,6 +1,7 @@
 import React from "react";
 
-import logo from "../images/crewdev_logo.png";
+import logo from "Images/crewdev_logo.png";
+import "./css.css";
 
 function ShowCase() {
   return (
