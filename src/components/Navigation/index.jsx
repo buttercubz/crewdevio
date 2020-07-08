@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import "./css.css";
@@ -6,11 +6,35 @@ import "./css.css";
 function Navigation() {
   const [toggleButton, setToggleButton] = useState(false);
   const [menuClass, setMenuClass] = useState("nav-menu");
+  const toggleRef = useRef(null);
+  const wrapperRef = useRef(null);
 
-  useEffect(() => {
-    var newClassName = toggleButton ? "nav-menu active" : "nav-menu";
-    setMenuClass(newClassName);
-  }, [toggleButton]);
+  useEffect(
+    function eventListenerClickOut() {
+      function handleClickOutside(event) {
+        if (
+          wrapperRef.current &&
+          !wrapperRef.current.contains(event.target) &&
+          !toggleRef.current.contains(event.target)
+        ) {
+          setToggleButton(false);
+        }
+      }
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    },
+    [wrapperRef]
+  );
+
+  useEffect(
+    function toggleClassName() {
+      var newClassName = toggleButton ? "nav-menu active" : "nav-menu";
+      setMenuClass(newClassName);
+    },
+    [toggleButton]
+  );
 
   return (
     <nav className="nav-main">
@@ -27,10 +51,11 @@ function Navigation() {
         onClick={() => {
           setToggleButton(!toggleButton);
         }}
+        ref={toggleRef}
       >
         &#9776;
       </span>
-      <div className={menuClass}>
+      <div className={menuClass} ref={wrapperRef}>
         <ul>
           <li>
             <Link to="/">Home</Link>
