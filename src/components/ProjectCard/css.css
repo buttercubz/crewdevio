@@ -30,6 +30,7 @@
   margin: auto;
   padding-top: 20px;
   font-size: 50px;
+  text-align: center;
 }
 .project-card .project-desc {
   grid-area: 4 / 1 / 6 / 3;
@@ -57,11 +58,5 @@
   }
   .project-card .project-link {
     margin-bottom: 10px;
-  }
-}
-
-@media (min-height: 1000px) {
-  .project-card .project-desc {
-    font-size: 1.5em;
   }
 }

@@ -7,16 +7,19 @@ import "./css.css";
 function ProjectPage({ match }) {
   const [markdown, setMarkdown] = useState(null);
   useEffect(function getMDToRender() {
-    let data = getRepoMD(match.patams.repo)
-    setMarkdown(data);
+    let data = getRepoMD(match.params.repo);
+    data.then(md => setMarkdown(md))
   }, []);
+  if (markdown !== null) {
+    return (
+      <div className="container-project">
+        <MarkdownPreview source={markdown} />
+      </div>
+    );
+  }
   return (
-    <div classNam="container-project">
-      {<MarkdownPreview source={markdown} /> ? (
-        markdown !== null
-      ) : (
-        <h1 className="loading">loading</h1>
-      )}
+    <div className="container-project">
+      <h1 className="loading">loading</h1>
     </div>
   );
 }
