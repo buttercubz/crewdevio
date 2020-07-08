@@ -1,15 +1,19 @@
+import LasyLoading from "../lazyLoading";
 import React from "react";
-
 import "./css.css";
 
-function MemberCard({memberItem}) {
-  const { name, desc, email, photo, work, social } = memberItem
+function MemberCard({ memberItem }) {
+  const { name, desc, email, photo, work, social } = memberItem;
   return (
-    <div className="member-card" >
+    <div className="member-card">
       <h1 className="name">
         <span className="color-blue">{name}</span>
       </h1>
-      <img src={photo} alt="Profile Photo" className="profile-picture" />
+      <LasyLoading
+        image={photo}
+        alt="Profile Photo"
+        className="profile-picture"
+      />
       <h3 className="work">
         Work: <span className="color-yellow">{work}</span>
       </h3>

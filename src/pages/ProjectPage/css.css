@@ -1,3 +1,5 @@
+@import "../../../node_modules/animate.css/animate.compat.css";
+
 .container-project {
   margin-top: 90px;
   display: flex;
@@ -13,4 +15,9 @@
 
 h3 {
   text-align: center;
+}
+
+.loading {
+  animation: bounce;
+  animation-duration: 1s;
 }
