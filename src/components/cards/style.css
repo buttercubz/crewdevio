@@ -1,0 +1,113 @@
+/* * project card */
+
+.project-card {
+  margin-top: 10%;
+  width: 450px;
+  padding: 5px;
+  margin: auto;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 0px 13px 15px -2px rgba(0, 0, 0, 0.75);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  margin-bottom: 50px;
+}
+
+.project-card:hover {
+  -ms-transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
+  transition: ease-in 200ms;
+}
+
+.project-card .project-name {
+  grid-area: 1 / 1 / 4 / 3;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding-top: 20px;
+  font-size: 50px;
+  text-align: center;
+}
+.project-card .project-desc {
+  grid-area: 4 / 1 / 6 / 3;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  text-align: center;
+  padding-left: 40px;
+  word-wrap: break-word;
+  font-size: 20px;
+}
+.project-card .project-link {
+  grid-area: 6 / 1 / 7 / 3;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+  .project-card {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .project-card .project-link {
+    margin-bottom: 10px;
+  }
+}
+
+/* * member card */
+
+.member-card {
+  max-width: 450px;
+  min-height: 550px;
+  width: 90%;
+  margin: 40px 0;
+  padding: 25px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: dashed 5px;
+  border-radius: 20px;
+  background-color: #efefef;
+}
+
+.member-card .profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.member-card .work {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.member-card .desc {
+  margin: 10px 0 30px;
+  font-size: 20px;
+}
+
+.member-card .email {
+  margin: auto 0 20px;
+}
+
+.member-card .social-medias {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-card .social-medias a {
+  margin: 0 5px;
+}
+
+@media (max-width: 900px) {
+  .member-card .profile-picture {
+    width: 150px;
+    height: 150px;
+  }
+}

@@ -1,12 +1,14 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import React, { Fragment } from "react";
 
-import Navigation from "Components/Navigation";
-import HomePage from "Pages/HomePage";
-import ProjectPage from "Pages/ProjectPage";
-import ProjectsPage from "Pages/ProjectsPage";
-import TeamPage from "Pages/TeamPage";
-import NotFound from "Pages/NotFound";
+import Navigation from "./components/navigation.jsx";
+import HomePage from "./components/homePage/home.jsx";
+import ProjectPage from "./components/project/page.jsx";
+import ProjectsPage from "./components/project/projectsPage.jsx";
+import TeamPage from "./components/team.jsx";
+import NotFound from "./components/notfound.jsx";
+
+import "./style.css";
 
 function App() {
   return (

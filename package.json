@@ -1,34 +1,33 @@
 {
-  "name": "crewdev_page",
-  "version": "1.0.0",
-  "description": "",
-  "main": "bundle.js",
-  "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot --port 3000",
-    "build": "webpack --mode production"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
+  "name": "pagecrew",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "@uiw/react-markdown-preview": "^1.0.8",
     "animate.css": "^4.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-lazy-load-image-component": "^1.5.0",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1"
   },
-  "devDependencies": {
-    "@babel/core": "^7.10.4",
-    "@babel/preset-env": "^7.10.4",
-    "@babel/preset-react": "^7.10.4",
-    "babel-loader": "^8.1.0",
-    "css-loader": "^3.6.0",
-    "file-loader": "^6.0.0",
-    "html-webpack-plugin": "^4.3.0",
-    "style-loader": "^1.2.1",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

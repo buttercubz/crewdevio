@@ -1,0 +1,91 @@
+@import "../node_modules/animate.css/animate.compat.css";
+@import "./components/homePage/style.css";
+@import "./components/project/style.css";
+@import "./components/cards/style.css";
+@import "./components/style.css";
+
+:root {
+  --white-main-color: #f3f3f3;
+  --blue-main-color: #00a8f3;
+  --yellow-main-color: #ffca18;
+  --gray-main-color: #585858;
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f3f3f3;
+  color: #676767;
+  text-align: center;
+}
+
+/* General rules */
+a:hover {
+  color: #e66666;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.loading {
+  margin-top: 300px;
+}
+
+section {
+  min-height: calc(100vh - 100px);
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+
+.color-red {
+  color: var(--yellow-main-color);
+}
+
+.color-gray {
+  color: var(--gray-main-color);
+}
+
+.color-blue {
+  color: var(--blue-main-color);
+}
+
+.color-yellow {
+  color: var(--yellow-main-color);
+}
+
+.font-size-double {
+  font-size: 200%;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: ease-in 200ms;
+}
+
+.hidden {
+  display: none;
+}
+
+.wmde-markdown {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h3 {
+  text-align: center;
+}
+
+.loading {
+  animation: bounce;
+  animation-duration: 1s;
+}
