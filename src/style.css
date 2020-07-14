@@ -27,11 +27,12 @@ body {
 
 /* General rules */
 a:hover {
-  color: #e66666;
+  color: var(--yellow-main-color);
   cursor: pointer;
 }
 
 a {
+  color: var(--blue-main-color);;
   text-decoration: none;
 }
 

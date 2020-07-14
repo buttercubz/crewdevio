@@ -17,7 +17,7 @@ function MemberCard({ memberItem }) {
         Work: <span className="color-yellow">{work}</span>
       </h3>
       <p className="desc">{desc}</p>
-      <a className="email" href={'#/'}>
+      <a className="email" href={`mailto: ${email}`}>
         {email}
       </a>
       <div className="social-medias">
