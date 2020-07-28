@@ -60,9 +60,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: dashed 5px;
+  border: solid 1px #2727277c;
   border-radius: 20px;
-  background-color: #efefef;
+  background-color: #f5f1f1;
+  transition: ease-out 150ms;
+  box-shadow: black inset;
+}
+
+.member-card:hover {
+  transform: scale(1.04);
 }
 
 .member-card .profile-picture {
