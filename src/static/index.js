@@ -1,6 +1,7 @@
 import erickPhoto from "./images/erick.jpg";
 import rivierPhoto from "./images/rivier.jpg";
 import estebanPhoto from "./images/esteban.jpg";
+import gil from "./images/gil.png";
 
 export const membersList = [
   {
@@ -44,6 +45,19 @@ export const membersList = [
       linkedin:
         "https://www.linkedin.com/in/jose-esteban-garcia-grullon-443624198/",
       instagram: "https://www.instagram.com/egg_jose/",
+    },
+  },
+  {
+    name: "Gil Rudolf Härdi",
+    desc:
+      "Hello! I'm Gil and I study web development with NodeJS, PHP, Go and Python. I'm focused on learning everything I can about JavaScript.",
+    email: "ghaerdi@ipisdosaj.edu.do",
+    photo: gil,
+    work: "Developer",
+    social: {
+      github: "https://github.com/ghaerdi",
+      linkedin:
+        "https://www.linkedin.com/in/gil-rudolf-h%C3%A4rdi-satana-71597619a/",
     },
   },
 ];

@@ -12,10 +12,12 @@ function ProjectsContainer({ title, two }) {
       .then((data) => setprojects(data));
   }, []);
 
+  const random = () => Math.round(Math.random() * list.length);
+
   if (!projects.length) return <h1 className="loading">loading</h1>;
 
   if (two) {
-    list = [projects[3], projects[1]];
+    list = [projects[random()], projects[random()]];
   }
 
   return (
