@@ -12,8 +12,8 @@ function About() {
         <p>
           We are a team of software developers from the{" "}
           <span className="color-yellow"> Dominican Republic </span> and we create
-          different solutions for the node js and deno ecosystem,
-          we create solutions for both frontend and backend.
+          different open source projects, in areas such as web,
+          command line tools, backend and frontend.
         </p>
         <img src={Programming_rafiki} alt="img" />
       </div>
