@@ -5,18 +5,18 @@ import gil from "./images/gil.png";
 
 export const membersList = [
   {
-    name: "Erick Sosa Garcia",
+    name: "Erick Sosa (buttercubz)",
     desc:
       "Hello I'm Erick I study Javascript, typescript, python, go, Node js and focused in deno 🦕",
     email: "ericksosagarcias@gmail.com",
     photo: erickPhoto,
     work: "Developer",
     social: {
-      twitter: "https://twitter.com/a_badnick",
+      twitter: "https://twitter.com/buttercubz",
       github: "https://github.com/buttercubz",
       linkedin: "https://www.linkedin.com/in/erick-sosa-garcia-301b45185/",
-      gitlab: "https://gitlab.com/ericksosagarcias",
-      instagram: "https://www.instagram.com/ericksosagarcia",
+      gitlab: "https://gitlab.com/buttercubz",
+      instagram: "https://www.instagram.com/buttercubz",
     },
   },
   {
