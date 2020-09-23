@@ -2,6 +2,7 @@ import erickPhoto from "./images/erick.jpg";
 import rivierPhoto from "./images/rivier.jpg";
 import estebanPhoto from "./images/esteban.jpg";
 import gil from "./images/gil.png";
+import starling from "./images/starling.jpg";
 
 export const membersList = [
   {
@@ -10,7 +11,7 @@ export const membersList = [
       "Hello I'm Erick I study Javascript, typescript, python, go, Node js and focused in deno 🦕",
     email: "ericksosagarcias@gmail.com",
     photo: erickPhoto,
-    work: "Developer",
+    work: "Developer full-stack, project manager",
     social: {
       twitter: "https://twitter.com/buttercubz",
       github: "https://github.com/buttercubz",
@@ -25,7 +26,7 @@ export const membersList = [
       "I'm Rivier, I'm an enthusiastic developer, I study Javascript, Typescript, Python, NodeJs but actually I'm focused on Deno 🦕",
     email: "rgrullon@ipisdosaj.edu.do",
     photo: rivierPhoto,
-    work: "Developer",
+    work: "Developer full-stack, QA",
     social: {
       twitter: "https://twitter.com/RamirezRivier",
       github: "https://github.com/RivierGrullon",
@@ -38,7 +39,7 @@ export const membersList = [
       "Hi! I'm Jose Esteban, web developer apprentice, always trying to learn something new. // Lover of cartoons and pizza 🍕",
     email: "josegg1897@gmail.com",
     photo: estebanPhoto,
-    work: "Developer",
+    work: "Developer frontend, designer",
     social: {
       twitter: "https://twitter.com/egg_jose",
       github: "https://github.com/jose1897",
@@ -53,11 +54,24 @@ export const membersList = [
       "Hello! I'm Gil and I study web development with NodeJS, PHP, Go and Python. I'm focused on learning everything I can about JavaScript.",
     email: "ghaerdi@ipisdosaj.edu.do",
     photo: gil,
-    work: "Developer",
+    work: "Developer full-stack, designer",
     social: {
       github: "https://github.com/ghaerdi",
       linkedin:
         "https://www.linkedin.com/in/gil-rudolf-h%C3%A4rdi-satana-71597619a/",
+    },
+  },
+  {
+    name: "Starling Lora",
+    desc:
+      "I'm Starling, I study JavaScript, Python, React Native, always trying to learn something new.",
+    email: "starlinglora@gmail.com",
+    photo: starling,
+    work: "Developer full-stack",
+    social: {
+      github: "https://github.com/slorard",
+      twitter: "https://twitter.com/starlingl_",
+      instagram: "https://www.instagram.com/starlingl_",
     },
   },
 ];
