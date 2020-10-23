@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&display=swap');
 @import "../node_modules/animate.css/animate.compat.css";
 @import "./components/homePage/style.css";
 @import "./components/project/style.css";
@@ -5,10 +6,10 @@
 @import "./components/style.css";
 
 :root {
-  --white-main-color: #f3f3f3;
+  --white-main-color: #fcfafaf8;
   --blue-main-color: #00a8f3;
   --yellow-main-color: #ffca18;
-  --gray-main-color: #585858;
+  --gray-main-color: #585858; /*   */
 }
 
 * {
@@ -19,8 +20,10 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: #f3f3f3;
+  /* font-family: "Roboto", sans-serif;
+   */
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: var(--white-main-color);
   color: #676767;
   text-align: center;
 }
@@ -29,10 +32,11 @@ body {
 a:hover {
   color: var(--yellow-main-color);
   cursor: pointer;
+  transition: ease 500ms;
 }
 
 a {
-  color: var(--blue-main-color);;
+  color: var(--blue-main-color);
   text-decoration: none;
 }
 
@@ -69,8 +73,6 @@ section {
 
 .btn:hover {
   cursor: pointer;
-  transform: scale(1.1);
-  transition: ease-in 200ms;
 }
 
 .hidden {

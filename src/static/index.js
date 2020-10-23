@@ -11,7 +11,7 @@ export const membersList = [
       "Hello I'm Erick I study Javascript, typescript, python, go, Node js and focused in deno 🦕",
     email: "ericksosagarcias@gmail.com",
     photo: erickPhoto,
-    work: "Dev full-stack, project manager",
+    work: "Full-Stack, Project Manager",
     social: {
       twitter: "https://twitter.com/buttercubz",
       github: "https://github.com/buttercubz",
@@ -26,7 +26,7 @@ export const membersList = [
       "I'm Rivier, I'm an enthusiastic developer, I study Javascript, Typescript, Python, NodeJs but actually I'm focused on Deno 🦕",
     email: "rgrullon@ipisdosaj.edu.do",
     photo: rivierPhoto,
-    work: "Dev full-stack, QA",
+    work: "Full-Stack, QA",
     social: {
       twitter: "https://twitter.com/RamirezRivier",
       github: "https://github.com/RivierGrullon",
@@ -39,7 +39,7 @@ export const membersList = [
       "Hi! I'm Jose Esteban, web developer apprentice, always trying to learn something new. // Lover of cartoons and pizza 🍕",
     email: "josegg1897@gmail.com",
     photo: estebanPhoto,
-    work: "Dev frontend, designer",
+    work: "Frontend, Designer",
     social: {
       twitter: "https://twitter.com/egg_jose",
       github: "https://github.com/jose1897",
@@ -54,7 +54,7 @@ export const membersList = [
       "Hello! I'm Gil and I study web development with NodeJS, PHP, Go and Python. I'm focused on learning everything I can about JavaScript.",
     email: "ghaerdi@ipisdosaj.edu.do",
     photo: gil,
-    work: "Dev full-stack, designer",
+    work: "Full-Stack, Designer",
     social: {
       github: "https://github.com/ghaerdi",
       linkedin:
@@ -67,7 +67,7 @@ export const membersList = [
       "I'm Starling, I study JavaScript, Python, React Native, always trying to learn something new.",
     email: "starlinglora@gmail.com",
     photo: starling,
-    work: "Dev full-stack",
+    work: "Full-Stack",
     social: {
       github: "https://github.com/slorard",
       twitter: "https://twitter.com/starlingl_",

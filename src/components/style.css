@@ -8,9 +8,16 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  background: #585858fa;
+  background: #fffffff3;
   top: 0;
   left: 0;
+  -webkit-box-shadow: 0px 18px 86px -32px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 18px 86px -32px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 18px 86px -32px rgba(0, 0, 0, 0.8);
+}
+
+.logo-letter {
+  position: relative;
 }
 
 .nav-main .main-logo {
@@ -49,7 +56,7 @@
 }
 
 .nav-main .nav-menu li a {
-  color: var(--white-main-color);
+  color: #585858e1;
   text-decoration: none;
   padding: 0.5rem;
 }
@@ -80,10 +87,14 @@
     padding: 0.5rem;
   }
   .nav-main .nav-menu li a:hover {
-    background-color: #9a9a9a;
+    background-color: #f5f1f1;
+    border-radius: 5px;
   }
   .nav-main .nav-menu.active {
     display: inline;
+  }
+  .main-logo {
+    margin-top: 19px;
   }
 }
 
