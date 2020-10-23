@@ -39,8 +39,8 @@ function Navigation() {
       <div className="main-logo btn">
         <h1 className="color-yellow">
           <Link to="/">
-            <span className="color-yellow">Crew </span>
-            <span className="color-blue"> Dev</span>
+            <span className="color-yellow logo-letter">Crew </span>
+            <span className="color-blue logo-letter"> Dev</span>
           </Link>
         </h1>
       </div>
