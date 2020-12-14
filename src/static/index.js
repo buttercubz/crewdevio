@@ -51,7 +51,7 @@ export const membersList = [
   {
     name: "Gil Rudolf Härdi",
     desc:
-      "Hello! I'm Gil and I study web development with NodeJS, PHP, Go and Python. I'm focused on learning everything I can about JavaScript.",
+      "Hello! I'm Gil and I study web development with NodeJS, Go and Python. I'm focused on learning everything I can about JavaScript.",
     email: "ghaerdi@ipisdosaj.edu.do",
     photo: gil,
     work: "Full-Stack, Designer",
