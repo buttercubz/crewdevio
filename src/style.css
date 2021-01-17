@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import "../node_modules/animate.css/animate.compat.css";
 @import "./components/homePage/style.css";
 @import "./components/project/style.css";
@@ -6,7 +6,7 @@
 @import "./components/style.css";
 
 :root {
-  --white-main-color: #fcfafaf8;
+  --white-main-color: #fcfafada;
   --blue-main-color: #00a8f3;
   --yellow-main-color: #ffca18;
   --gray-main-color: #585858; /*   */
@@ -20,12 +20,19 @@
 }
 
 body {
-  /* font-family: "Roboto", sans-serif;
-   */
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: var(--white-main-color);
   color: #676767;
   text-align: center;
+}
+
+.glass {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(2rem);
 }
 
 /* General rules */

@@ -4,10 +4,7 @@ export const getRepoMD = async (repo) => {
   );
   const data = await response.text();
 
-  console.log(typeof response.status);
-
   if (response.status === 404) {
-    console.log("here");
     const responseMain = await fetch(
       `https://raw.githubusercontent.com/crewdevio/${repo}/main/README.md`
     );

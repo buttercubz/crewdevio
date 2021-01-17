@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
 import ProjectCard from "../cards/projectCard.jsx";
+import { WaveTopBottomLoading } from "react-loadingg";
+
+
+export const Loading = () => <WaveTopBottomLoading />
 
 function ProjectsContainer({ title, two }) {
   const [projects, setprojects] = useState([]);
@@ -9,15 +13,14 @@ function ProjectsContainer({ title, two }) {
   useEffect(() => {
     fetch("https://api.github.com/orgs/crewdevio/repos")
       .then((response) => response.json())
-      .then((data) => setprojects(data));
+      .then((data) => setprojects(data ?? []));
   }, []);
 
-  const random = () => Math.round(Math.random() * list.length);
-
-  if (!projects.length) return <h1 className="loading">loading</h1>;
+  if (!projects.length) return <Loading  />;
 
   if (two) {
-    list = [projects[random()], projects[random()]];
+    const [one, two] = list.sort(() => Math.random() - 0.5);
+    list = [one, two];
   }
 
   return (

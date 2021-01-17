@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import MarkdownPreview from "@uiw/react-markdown-preview";
 import { getRepoMD } from "../../utils/index.js";
+import { Loading } from "./Container";
 
 function ProjectPage({ match }) {
   const [markdown, setMarkdown] = useState(null);
@@ -17,6 +18,7 @@ function ProjectPage({ match }) {
       </div>
     );
   }
-  return <h1 className="loading">loading</h1>;
+
+  return <Loading />;
 }
 export default ProjectPage;

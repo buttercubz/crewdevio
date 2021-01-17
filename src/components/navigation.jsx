@@ -35,7 +35,7 @@ function Navigation() {
   );
 
   return (
-    <nav className="nav-main">
+    <nav className="nav-main glass">
       <div className="main-logo btn">
         <h1 className="color-yellow">
           <Link to="/">

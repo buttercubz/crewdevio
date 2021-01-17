@@ -4,7 +4,7 @@ import React from "react";
 function MemberCard({ memberItem }) {
   const { name, desc, email, photo, work, social } = memberItem;
   return (
-    <div className="member-card">
+    <div className="member-card glass">
       <h1 className="name">
         <span className="color-blue">{name}</span>
       </h1>
