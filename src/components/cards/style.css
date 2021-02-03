@@ -59,7 +59,8 @@
 
 .member-card {
   max-width: 450px;
-  min-height: 550px;
+  height: 80vh;
+  max-height: 600px;
   width: 90%;
   margin: 40px 0;
   padding: 25px 10px;
@@ -93,14 +94,22 @@
 .member-card .desc {
   margin: 10px 0 30px;
   font-size: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-.member-card .email {
-  margin: auto 0 20px;
+.member-card:hover .desc {
+  display: inline;
+}
+
+.member-card .social-and-email {
+  margin-top: auto;
 }
 
 .member-card .social-medias {
-  margin-top: auto;
+  margin-top: 5px;
   display: flex;
   align-items: center;
   justify-content: center;

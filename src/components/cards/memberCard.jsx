@@ -17,23 +17,25 @@ function MemberCard({ memberItem }) {
         Work: <span className="color-yellow">{work}</span>
       </h3>
       <p className="desc">{desc}</p>
-      <a className="email" href={`mailto: ${email}`}>
-        {email}
-      </a>
-      <div className="social-medias">
-        {Object.keys(social).map((mediaName, index) => (
-          <a
-            href={social[mediaName]}
-            title={mediaName}
-            style={{ color: "#000" }}
-            key={index}
-          >
-            <i
-              className={`fa fa-${mediaName}`}
-              style={{ fontSize: "24px" }}
-            ></i>
-          </a>
-        ))}
+      <div className="social-and-email">
+        <a className="email" href={`mailto: ${email}`}>
+          {email}
+        </a>
+        <div className="social-medias">
+          {Object.keys(social).map((mediaName, index) => (
+            <a
+              href={social[mediaName]}
+              title={mediaName}
+              style={{ color: "#000" }}
+              key={index}
+            >
+              <i
+                className={`fa fa-${mediaName}`}
+                style={{ fontSize: "24px" }}
+              ></i>
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );
