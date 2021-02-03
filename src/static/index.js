@@ -51,14 +51,14 @@ export const membersList = [
   {
     name: "Gil Rudolf Härdi",
     desc:
-      "Hello! I'm Gil and I study web development with NodeJS, Go and Python. I'm focused on learning everything I can about JavaScript.",
-    email: "ghaerdi@ipisdosaj.edu.do",
+      "I'm learning nice stuff like Typescript, Golang and Python.",
+    email: "ghaerdi@outlook.com",
     photo: gil,
     work: "Full-Stack, Designer",
     social: {
       github: "https://github.com/ghaerdi",
-      linkedin:
-        "https://www.linkedin.com/in/gil-rudolf-h%C3%A4rdi-satana-71597619a/",
+      linkedin: "https://www.linkedin.com/in/ghaerdi/",
+      instagram: "https://www.instagram.com/ghaerdi/",
     },
   },
   {
