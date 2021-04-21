@@ -8,6 +8,7 @@ import ProjectsPage from "./components/project/projectsPage.jsx";
 import TeamPage from "./components/team.jsx";
 import NotFound from "./components/notfound.jsx";
 
+import "animate.css/animate.min.css"
 import "./style.css";
 
 function App() {

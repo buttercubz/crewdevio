@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import "../node_modules/animate.css/animate.compat.css";
 @import "./components/homePage/style.css";
 @import "./components/project/style.css";
@@ -20,7 +20,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--white-main-color);
   color: #676767;
   text-align: center;
@@ -52,7 +52,7 @@ a {
 }
 
 section {
-  min-height: calc(100vh - 100px);
+  min-height: calc(80vh - 100px);
   width: 100%;
   height: auto;
   margin-top: 100px;
@@ -98,4 +98,17 @@ h3 {
 .loading {
   animation: bounce;
   animation-duration: 1s;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--white-main-color);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--blue-main-color);
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-track {
+  background-color: var(--white-main-color);
+  width: 20px;
 }

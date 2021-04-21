@@ -28,6 +28,8 @@ function MemberCard({ memberItem }) {
               title={mediaName}
               style={{ color: "#000" }}
               key={index}
+              target="_blank"
+              rel="noreferrer"
             >
               <i
                 className={`fa fa-${mediaName}`}

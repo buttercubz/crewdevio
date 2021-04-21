@@ -1,9 +1,23 @@
+import {
+  SolarSystemLoading,
+  WindMillLoading,
+  EatLoading,
+  RollBoxLoading,
+  MeteorRainLoading,
+} from "react-loadingg";
 import React, { useState, useEffect } from "react";
 import ProjectCard from "../cards/projectCard.jsx";
-import { WaveTopBottomLoading } from "react-loadingg";
 
+const color = "#ffca18";
 
-export const Loading = () => <WaveTopBottomLoading />
+export const Loading = () =>
+  [
+    <SolarSystemLoading color={color} />,
+    <WindMillLoading color={color} />,
+    <EatLoading color={color} />,
+    <RollBoxLoading color={color} />,
+    <MeteorRainLoading color={color} />,
+  ].sort(() => Math.random() - 0.5)[0];
 
 function ProjectsContainer({ title, two }) {
   const [projects, setprojects] = useState([]);
@@ -16,7 +30,7 @@ function ProjectsContainer({ title, two }) {
       .then((data) => setprojects(data ?? []));
   }, []);
 
-  if (!projects.length) return <Loading  />;
+  if (!projects.length) return <Loading />;
 
   if (two) {
     const [one, two] = list.sort(() => Math.random() - 0.5);

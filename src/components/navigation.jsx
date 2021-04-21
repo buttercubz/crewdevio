@@ -7,35 +7,29 @@ function Navigation() {
   const toggleRef = useRef(null);
   const wrapperRef = useRef(null);
 
-  useEffect(
-    function eventListenerClickOut() {
-      function handleClickOutside(event) {
-        if (
-          wrapperRef.current &&
-          !wrapperRef.current.contains(event.target) &&
-          !toggleRef.current.contains(event.target)
-        ) {
-          setToggleButton(false);
-        }
-      }
-      document.addEventListener("mousedown", handleClickOutside);
-      return () => {
-        document.removeEventListener("mousedown", handleClickOutside);
-      };
-    },
-    [wrapperRef]
-  );
+  const debounceToggle = () =>
+    setTimeout(() => setToggleButton(!toggleButton), 300);
 
-  useEffect(
-    function toggleClassName() {
-      var newClassName = toggleButton ? "nav-menu active" : "nav-menu";
-      setMenuClass(newClassName);
-    },
-    [toggleButton]
-  );
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        wrapperRef.current &&
+        !wrapperRef.current.contains(event.target) &&
+        !toggleRef.current.contains(event.target)
+      ) {
+        setToggleButton(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [wrapperRef]);
+
+  useEffect(() => {
+    setMenuClass(toggleButton ? "nav-menu active" : "nav-menu");
+  }, [toggleButton]);
 
   return (
-    <nav className="nav-main glass">
+    <nav className="nav-main glass animate__animated animate__fadeIn">
       <div className="main-logo btn">
         <h1 className="color-yellow">
           <Link to="/">
@@ -54,15 +48,21 @@ function Navigation() {
         &#9776;
       </span>
       <div className={menuClass} ref={wrapperRef}>
-        <ul>
+        <ul className="">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={debounceToggle}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link to="/projects" onClick={debounceToggle}>
+              Projects
+            </Link>
           </li>
           <li>
-            <Link to="/team">Our Team</Link>
+            <Link to="/team" onClick={debounceToggle}>
+              Our Team
+            </Link>
           </li>
         </ul>
       </div>

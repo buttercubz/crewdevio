@@ -13,6 +13,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  margin-bottom: 90px;
 }
 
 .showcase .title {
@@ -43,7 +44,7 @@
 hr.divider-right {
   width: 90%;
   height: 10px;
-  margin-top: auto;
+  margin-top: 45vh;
   margin-bottom: 20px;
   background-color: #00a8f3;
   animation-name: drawRightLine;
@@ -96,11 +97,12 @@ hr.divider-right {
 }
 
 .about img {
-  width: 80%;
+  width: 50%;
+  height: auto;
 }
 
 .about p {
-  width: 50%;
+  width: 60%;
   text-align: start;
   font-size: 2em;
 }
@@ -125,6 +127,10 @@ hr.divider-right {
 @media (min-width: 700px) {
   .about p {
     padding-left: 10vw;
+  }
+
+  hr.divider-right {
+    margin-bottom: auto;
   }
 }
 

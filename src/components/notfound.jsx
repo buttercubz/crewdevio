@@ -1,12 +1,11 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
 
 function Notfound() {
   return (
     <figure>
-      <div className="sad-mac"></div>
       <Link to="/">
+        <div className="sad-mac"></div>
         <figcaption>
           <span className="sr-text">Error 404: Not Found</span>
           <span className="e"></span>

@@ -18,6 +18,13 @@
   align-content: space-around;
 }
 
+.link-to {
+  display: relative;
+  margin-left: auto;
+  margin-bottom: 50px;
+  margin-right: 25px;
+}
+
 /* * page */
 
 .container-project {
@@ -26,6 +33,11 @@
   flex-direction: column;
   align-items: flex-start;
   text-align: start;
+}
+
+.container-project p > img {
+  display: block;
+  margin: auto;
 }
 
 .wmde-markdown {

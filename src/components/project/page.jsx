@@ -6,7 +6,7 @@ import { Loading } from "./Container";
 function ProjectPage({ match }) {
   const [markdown, setMarkdown] = useState(null);
 
-  useEffect(function getMDToRender() {
+  useEffect(() => {
     let data = getRepoMD(match.params.repo);
     data.then((md) => setMarkdown(md));
   }, [match.params.repo]);
@@ -14,6 +14,17 @@ function ProjectPage({ match }) {
   if (markdown !== null) {
     return (
       <div className="container-project">
+        <div className="glass link-to">
+          <h3>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href={`https://github.com/crewdevio/${match?.params.repo}`}
+            >
+              View Repository
+            </a>
+          </h3>
+        </div>
         <MarkdownPreview source={markdown} />
       </div>
     );
